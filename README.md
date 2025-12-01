@@ -1,18 +1,18 @@
 🌸 Iris Flower Classification – KNN Model
 
-This project applies the K-Nearest Neighbors (KNN) algorithm on the popular Iris dataset to classify iris flowers into three species based on their measurements.
+This project applies the K-Nearest Neighbors (KNN) algorithm on the popular Iris dataset to classify iris flowers into three species.
 
 📘 Dataset Description
 
 The Iris dataset contains 150 rows and 4 features:
 
 Feature	Description
-Sepal Length	Length of the sepal (cm)
-Sepal Width	Width of the sepal (cm)
-Petal Length	Length of the petal (cm)
-Petal Width	Width of the petal (cm)
+Sepal Length	Length of sepal (cm)
+Sepal Width	Width of sepal (cm)
+Petal Length	Length of petal (cm)
+Petal Width	Width of petal (cm)
 
-Target Variable:
+Target Labels:
 
 Setosa
 
@@ -22,69 +22,62 @@ Virginica
 
 🎯 Project Objective
 
-To build a KNN classification model that predicts the species of an iris flower based on its characteristics.
+Build a KNN classifier
+
+Predict the species of a flower
+
+Find the best K value using accuracy
+
+Evaluate the model using confusion matrix and accuracy score
 
 🔧 Steps Performed
 
-Importing the Iris dataset
+Loaded and cleaned the dataset
 
-Exploratory Data Analysis (EDA)
+Dropped unnecessary columns
 
-Checking shape, summary statistics
+Split into train and test sets
 
-Visualizing distributions
+Scaled the features using StandardScaler
 
-Splitting dataset into train and test
+Trained KNN with values of K from 1 to 20
 
-Scaling features using StandardScaler
+Selected the best K based on accuracy
 
-Training KNN model with different values of k
+Visualized confusion matrix
 
-Finding best k using accuracy comparison
-
-Evaluating model using
-
-Accuracy score
-
-Confusion Matrix
-
+Evaluated performance
 
 📊 Model Evaluation
-
-The model performance is checked using:
 
 Accuracy Score
 
 Confusion Matrix
 
+Classification Report
 
-These help understand how well the model predicts each class.
+These metrics show how well the model predicts each iris species.
 
 📦 Dependencies
-
-Install the required libraries:
-
-pip install numpy pandas scikit-learn matplotlib seaborn
+pip install numpy pandas scikit-learn matplotlib
 
 🧪 How to Run
 
-Clone the repo
+Clone or download the repository
 
-Open the notebook (.ipynb)
+Open the notebook or .py file
 
-Run all cells step by step
+Run the script cell-by-cell
 
-Check predictions and evaluation metrics
+View predictions and evaluation results
 
 📝 Conclusion
 
-KNN performs very well on the Iris dataset due to its small size and clear separation between classes.
-You can experiment with:
+The KNN model performs well on the Iris dataset due to its simple and well-separated classes.
+You can further experiment with:
 
-Different values of k
+Changing K values
 
-Distance metrics (euclidean, manhattan)
+Trying different distance metrics
 
-Train-test split sizes
-
-Visualization of decision boundaries
+Visualizing decision boundaries
